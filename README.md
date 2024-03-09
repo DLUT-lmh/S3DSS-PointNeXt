@@ -1,10 +1,14 @@
 # S3DSS-PointNeXt
 
-## Welcome to DUT Sewer3D Semantic Segmentation Dataset! | [[S3DSS Dataset Download Address]](url) | [[OpenPoints Library]](https://github.com/guochengqian/openpoints) | [[PointNeXt Online Documentation]](https://guochengqian.github.io/PointNeXt/)
+## Welcome to DUT Sewer3D Semantic Segmentation Dataset ! | [[S3DSS Dataset Download Address]](url) | [[OpenPoints Library]](https://github.com/guochengqian/openpoints) | [[PointNeXt Online Documentation]](https://guochengqian.github.io/PointNeXt/)
 
 <p align="center">
 <img src="docs/projects/Logo/2-2.jpg" width=85% height=85% class="center">
 </p>
+
+---
+
+**This code project is a tutorial using the S3DSS dataset with PointNeXt as an example**
 
 ---
 
@@ -48,6 +52,8 @@ The synthetic point cloud data were obtained by our automated synthetic data gen
 
 For more details you can go to [our website](url).
 
+---
+
 ## PointNeXt Installation
 First you need to download and add the toolkit [OpenPoints Library](https://github.com/guochengqian/openpoints)
 
@@ -78,10 +84,58 @@ CUDA_VISIBLE_DEVICES=$GPUs python examples/$task_folder/main.py --cfg $cfg $kwar
 
 ## Read S3DSS Dataset
 
+First you need to overwrite the s3dis.py file in openpoints/dataset/s3dis with the s3dis.py file in S3DSS-PointNeXt.
+Provide an example of reading S3DSS dataset:
+
+```
+raw_root = os.path.join(data_root, 'sewer3d_semantic_segmentation')
+self.raw_root = raw_root
+train_str = 'training-pointcloud-synthetic0/real300'
+test_str = 'testing-real200'
+
+shape_ids = {}
+shape_ids['train_synthetic'] = []
+# shape_ids['train_synthetic'] = [line.rstrip() for line in open(os.path.join(self.raw_root, 'training_pointcloud_synthetic_800.txt'))]
+# shape_ids['train_real'] = []
+shape_ids['train_real'] = [line.rstrip() for line in open(os.path.join(self.raw_root, 'training_pointcloud_real_200.txt'))]
+shape_ids['test_real'] = [line.rstrip() for line in open(os.path.join(self.raw_root, 'testing_pointcloud_real_200.txt'))]
 
 
+if split == 'train':
+    self.data_list = shape_ids['train_synthetic'] + shape_ids['train_real']
+else:
+    self.data_list = shape_ids['test_real']
 
+processed_root = os.path.join(data_root, 'processed')
+filename = os.path.join(processed_root, f's3dis_{split}_{test_str}_{voxel_size:.3f}.pkl')
+```
 
+Note that the dataset read path needs to be changed to your own path：
+```
+parser.add_argument('--cfg', type=str, default='/home/liminghao/PointNeXt/cfgs/s3dis/pointnext-b.yaml', required=False, help='config file')
+```
+/cfgs/s3dis/default.yaml:
+```
+dataset:
+  common:
+    NAME: S3DIS
+    data_root: /home/liminghao/Pointnet_Pointnet2_pytorch/data
+    test_area: 'testing-real200'
+    voxel_size: 0.04
+```
 
+---
 
+## Acknowledgements
+This work was supported by the National Key R & D Program of China (Grant No. 2022YFC3801000) and the National Natural Science Foundation of China (Grant No. 52079024). We also thank Qian et al. for sharing their great work PointNeXt.
 
+## Citation
+- Please cite this paper if you find this dataset useful: Data augmentation strategy for point cloud semantic segmentation of drainage pipeline defects: Generating synthetic data and fine-tunning pre-trained deep learning model.
+- Previous Publications: [M. Li, X. Feng, Q. Hu, 3D laser point cloud-based geometric digital twin for condition assessment of large diameter pipelines. Tunnelling and Underground Space Technology 142 (2023) 105430](https://www.sciencedirect.com/science/article/pii/S0886779823004509).
+
+<p align="center">
+<img src="docs/projects/Logo/13.jpg" width=85% height=85% class="center">
+</p>
+<p align="center">
+<img src="docs/projects/Logo/13.jpg" width=85% height=85% class="center">
+</p>
