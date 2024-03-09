@@ -1,13 +1,13 @@
 # S3DSS-PointNeXt
 
 ## Welcome to DUT Sewer3D Semantic Segmentation Dataset ! 
-
+--
 ### *by Minghao Li and [Xin Feng](http://faculty.dlut.edu.cn/2004011148/zh_CN/zsxx/724752/content/79928.htm)*
-
+--
+---
 <p align="center">
 <img src="docs/projects/Logo/2-2.jpg" width=85% height=85% class="center">
 </p>
-
 ---
 
 Additional tool addresses | [[S3DSS Dataset Download Address]](url) | [[OpenPoints Library]](https://github.com/guochengqian/openpoints) | [[PointNeXt Online Documentation]](https://guochengqian.github.io/PointNeXt/)
