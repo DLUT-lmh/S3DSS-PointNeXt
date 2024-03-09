@@ -1,6 +1,6 @@
 # S3DSS-PointNeXt
 
-## Welcome to DUT Sewer3D Semantic Segmentation Dataset ! 
+## Welcome to DUT Sewer3D Semantic Segmentation Dataset ! (Note: The dataset will be released soon)
 --
 ### *by Minghao Li and [Xin Feng](http://faculty.dlut.edu.cn/2004011148/zh_CN/zsxx/724752/content/79928.htm)*
 --
