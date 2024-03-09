@@ -18,6 +18,7 @@ Additional tool addresses | [[S3DSS Dataset Download Address]](url) | [[OpenPoin
 
 ## Motivation and Background
 Urban sewer pipelines, as the critical guarantors of urban resilience and sustainable development, undertake the task of sewage disposal and flood prevention. However, in many countries, most municipal sewer systems have been in service for *60* to *100* years, with the *worst* condition rating (*D+*) evaluated by ASCE.
+
 As laser scanning is fast becoming the state-of-the-art inspection technique for underground sewers, semantic segmentation of pipeline point clouds is an essential intermediate step for pipeline condition assessment and digital twinning. Currently, similar to other building structures, the scarcity of real-world point clouds has hindered the application of deep learning techniques for automated sewer pipeline semantic segmentation.
 
 ---
