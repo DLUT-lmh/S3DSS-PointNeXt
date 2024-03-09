@@ -74,7 +74,7 @@ Cuda-11.3 is required. Modify the `install.sh` if a different cuda version is us
 
 
 ## Usage 
-Check our [online documentation](https://guochengqian.github.io/PointNeXt/) for detailed instructions. 
+Check PointNeXt [online documentation](https://guochengqian.github.io/PointNeXt/) for detailed instructions. 
 
 A short instruction: all experiments follow the simple rule to train and test: 
 
