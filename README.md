@@ -41,9 +41,9 @@ The synthetic point cloud data were obtained by our automated synthetic data gen
 -  Spalling
 -  Blockage
 -  Corrosion
--  Misalign
+-  Misalignment
 -  Deposit
--  Displace
+-  Displacement
 -  Rubber Ring
 
 <p align="center">
