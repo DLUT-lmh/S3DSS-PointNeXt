@@ -135,7 +135,7 @@ dataset:
 This work was supported by the National Key R & D Program of China (Grant No. 2022YFC3801000) and the National Natural Science Foundation of China (Grant No. 52079024). We also thank Qian et al. for sharing their great work PointNeXt.
 
 ## Citation
-- Please cite this paper if you find this dataset useful: Data augmentation strategy for point cloud semantic segmentation of drainage pipeline defects: Generating synthetic data and fine-tunning pre-trained deep learning model.
+- Please cite this paper if you find this dataset useful: 【*** ***】
 - Previous Publications: [M. Li, X. Feng, Q. Hu, 3D laser point cloud-based geometric digital twin for condition assessment of large diameter pipelines. Tunnelling and Underground Space Technology 142 (2023) 105430](https://www.sciencedirect.com/science/article/pii/S0886779823004509).
 
 <p align="center">
