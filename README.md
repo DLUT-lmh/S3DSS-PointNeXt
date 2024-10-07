@@ -35,7 +35,7 @@ We provided a high-quality, realistic, semantically-rich public dataset named "*
 ## Content and Annotations
 The two sub-datasets were obtained in the following way. The real point cloud data were captured in laboratory scenarios using a **FARO Focus S laser scanner**. We used two prototype **reinforced concrete sewer pipes** to create most of the defect scenes. However, for misalign and displace defects that are difficult to operate with concrete pipes, we used two **steel pipes** which were well-designed to simulate. A total of 500 real scans were collected.
 
-The synthetic point cloud data were obtained by our automated synthetic data generator in Unity3D. [The introduction to the synthetic point cloud data generation methodology can be found in our paper.](url) We generated 2500 scans of sewer defect scenes. In S3DSS, 8 common defect classes are used which includes:
+The synthetic point cloud data were obtained by our automated synthetic data generator in Unity3D. [The introduction to the synthetic point cloud data generation methodology can be found in our paper.](url) We generated 800 scans of sewer defect scenes. In S3DSS, 8 common defect classes are used which includes:
 
 -  Normal
 -  Spalling
