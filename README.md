@@ -132,7 +132,7 @@ dataset:
 ---
 
 ## Acknowledgements
-This work was supported by the National Key R & D Program of China (Grant No. 2022YFC3801000) and the National Natural Science Foundation of China (Grant No. 52079024). We also thank Qian et al. for sharing their great work PointNeXt.
+This work was supported by the National Key R & D Program of China (Grant No. 2022YFC3801000) and the National Natural Science Foundation of China (Grant No. 52479118). We also thank Qian et al. for sharing their great work PointNeXt.
 
 ## Citation
 - Please cite this paper if you find this dataset useful:
