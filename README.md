@@ -135,8 +135,11 @@ dataset:
 This work was supported by the National Key R & D Program of China (Grant No. 2022YFC3801000) and the National Natural Science Foundation of China (Grant No. 52079024). We also thank Qian et al. for sharing their great work PointNeXt.
 
 ## Citation
-- Please cite this paper if you find this dataset useful: 【*** ***】
-- Previous Publications: [M. Li, X. Feng, Q. Hu, 3D laser point cloud-based geometric digital twin for condition assessment of large diameter pipelines. Tunnelling and Underground Space Technology 142 (2023) 105430](https://www.sciencedirect.com/science/article/pii/S0886779823004509).
+- Please cite this paper if you find this dataset useful:
+- [M. Li, X. Feng, Z. Wu, J. Bai, F. Yang, Game engine-driven synthetic point cloud generation method for LiDAR-based defect detection in sewers, Tunnelling and Underground Space Technology 163 (2025) 106755. https://doi.org/10.1016/j.tust.2025.106755.](https://www.sciencedirect.com/science/article/pii/S0886779825003931?via%3Dihub).
+- [Z. Wu, M. Li, Y. Han, X. Feng, Semantic segmentation of 3D point cloud for sewer defect detection using an integrated global and local deep learning network, Measurement 253 (2025) 117434. https://doi.org/10.1016/j.measurement.2025.117434.](https://www.sciencedirect.com/science/article/pii/S0263224125007936?via%3Dihub).
+- Previous Publications:
+- [M. Li, X. Feng, Q. Hu, 3D laser point cloud-based geometric digital twin for condition assessment of large diameter pipelines. Tunnelling and Underground Space Technology 142 (2023) 105430](https://www.sciencedirect.com/science/article/pii/S0886779823004509).
 
 <p align="center">
 <img src="docs/projects/Logo/13.jpg" width=85% height=85% class="center">
